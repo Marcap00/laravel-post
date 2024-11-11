@@ -14,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('pages.home');
+})->name('home');
+
+// Index
+Route::get('/posts', [PostController::class, 'index'])->name('index');
+
 
 
 
