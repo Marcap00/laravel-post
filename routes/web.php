@@ -18,4 +18,9 @@ Route::get('/', function () {
     return view('pages.home');
 })->name('home');
 
+<<<<<<< HEAD
 Route::get("/posts/{id}", [PostController::class, "show"])->name("posts.show");
+=======
+// Index
+Route::get('/posts', [PostController::class, 'index'])->name('index');
+>>>>>>> be8c37779f15299f7947e3e04f98bc74909cbdf3
